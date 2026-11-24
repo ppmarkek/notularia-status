@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "name": "Licence service",
+    "url": "https://api.notularia.com/healthz",
+    "icon": "https://icons.duckduckgo.com/ip3/api.notularia.com.ico",
+    "slug": "licence-service",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 606,
+    "timeDay": 606,
+    "timeWeek": 606,
+    "timeMonth": 606,
+    "timeYear": 606,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Website",
+    "url": "https://notularia.com",
+    "icon": "https://icons.duckduckgo.com/ip3/notularia.com.ico",
+    "slug": "website",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 194,
+    "timeDay": 194,
+    "timeWeek": 194,
+    "timeMonth": 194,
+    "timeYear": 194,
+    "dailyMinutesDown": {}
+  }
+]
