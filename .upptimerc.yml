@@ -1,31 +1,30 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: ppmarkek
+repo: notularia-status
 
+# What people of Notularia rely on from us. The app itself works offline; these are the
+# services that buying, activating and recovering a licence and the website need.
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Licence service
+    url: https://api.notularia.com/healthz
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
+  - name: Website
+    url: https://notularia.com
+    maxResponseTime: 5000
+
+# An outage opens an issue assigned here, which GitHub Mobile turns into a notification.
+assignees:
+  - ppmarkek
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.notularia.com
+  logoUrl: https://notularia.com/press/notularia-app-icon-512.png
+  name: Notularia status
+  introTitle: Notularia status
+  introMessage: The licence service and the website. Notularia itself works offline, so your notes are never affected.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: notularia.com
+      href: https://notularia.com
